@@ -28,8 +28,23 @@ for (var i=0 ; i<=letrasNombre.length; i++) {
 //FASE 2
 
 var vocales = ["a","e","i","o","u"];
-var numeros = ["1","2","3","4","5","6","7","8","9","0"]
+
 // MÉTODO 1
+
+function typeLetter (letter){
+  if (vocales.indexOf(letter)!= -1){
+    console.log(letter+" es una vocal");
+  } else if (isNaN(letter)){
+    console.log(letter+" es una consonante");
+    }
+    else {
+      console.log(letter+" es un número");
+    }
+}
+
+/*
+var numeros = ["1","2","3","4","5","6","7","8","9","0"]
+
 function typeLetter (letter){
   if (vocales.indexOf(letter)!= -1){
     console.log(letter+" es una vocal");
@@ -39,7 +54,7 @@ function typeLetter (letter){
     else {
       console.log(letter+" es una consonante");
     }
-}
+}*/
 
 /* MÉTODO 2
 for (var i=0; i<letrasNombre.length; i++) {
